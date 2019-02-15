@@ -39,10 +39,12 @@ h1 {
 }
 
 #brand_name {
-    font-size: 3em;
+    font-size: 6em;
     margin-top: 10px;
-    font-family: Bookman, "Times New Roman", serif;
-    font-weight: 900;
+    margin-bottom: 10px;
+    font-family: "Qwigley", "Times New Roman", serif;
+    font-weight: 400;
+    padding: 0;
 }
 
 .letter {
@@ -54,8 +56,68 @@ h1 {
     font-weight: 100;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    list-style-type: none;
+    background-color: #333333;
+    height: 50px;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+#logo {
+    float: left;
+    height: 50px;
+}
+
+#logo:hover {
+    background-color: black;
+}
+
+a {
+    margin: 0;
+    padding: 0 50px;
+    line-height: 50px;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+li:hover {
+    background-color: #915700;
+}
+
+@media screen and (max-width: 850px) {
+    #logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    li {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    ul {
+        height: auto;
+        position: static;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
 @media screen and (max-width: 600px) {
     #cover_text {
         width: 80%;
+    }
+    #brand_name {
+        margin: 0;
     }
 }
