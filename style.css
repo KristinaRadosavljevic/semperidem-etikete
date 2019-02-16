@@ -69,6 +69,7 @@ li {
     margin: 0;
     padding: 0;
     float: right;
+    transition: background-color 0.5s;
 }
 
 #logo {
@@ -81,6 +82,7 @@ li {
 }
 
 a {
+    display: block;
     margin: 0;
     padding: 0 50px;
     line-height: 50px;
@@ -91,6 +93,37 @@ a {
 
 li:hover {
     background-color: #915700;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    width: 70%;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h2:not(#brand_name)::first-letter {
+    color: #cc7a00;
+}
+
+#note {
+    text-decoration: underline;
+    transition: color 0.5s;
+}
+
+#note:hover {
+    color: #915700;
+}
+
+.break {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
 }
 
 @media screen and (max-width: 850px) {
@@ -119,5 +152,11 @@ li:hover {
     }
     #brand_name {
         margin: 0;
+    }
+    section {
+        width: 90%;
+    }
+    .break {
+        height: 70px;
     }
 }
