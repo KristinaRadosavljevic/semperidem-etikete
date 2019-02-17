@@ -27,14 +27,16 @@
             <li><a href="#o_nama">O nama</a></li>
         </ul>
         <!--O nama. Text is a sample-->
-        <section>
+        <section id="o_nama">
             <h2>O nama</h2>
+            <!--Only show the logo when it's not in the menu-->
+            <img src="images/logo.png" alt="Semper Idem logo" id="logo_in_text">
             <p>Da li ste u dilemi gde da kupite etikete za Vaše prizvode? Tražite kvalitet, 
                 pouzdanost i pristupačnu cenu?</p>
             <p>Mi Vam možemo ponuditi upravo to! Visok kvalitet izrade različitih vrsta etiketa, 
                 od ušivnih etiketa od poliestera i satena, do kartonskih i samolepljivih etiketa.</p>
-            <p>Zašto <span id="note" title="Lat. uvek isti">Semper Idem</span>? Zato što smo <i>
-                uvek isti</i>, kao što i naš naziv sugeriše. Naš proizvod je nešto što se ne 
+            <p>Zašto <strong id="note">Semper Idem</strong>? <i>Semper Idem</i> na latinskom 
+                znači 'uvek isti'. I kao što naš naziv sugeriše, naš proizvod je nešto što se ne 
                 menja. Ni pod uticajem sunca, ni pod uticajem hemije. I kao što već sigurno 
                 znate, etiketa nije samo oznaka porekla, načina održavanja i sastava tkanine 
                 od koje je Vaša odeća izrađena. Etiketa je takođe ogledalo Vašeg proizvoda. 
@@ -43,6 +45,28 @@
                 identiteta Vaše odeće.</p>
         </section>
         <!--Picture break-->
-        <img src="images/break.jpg" alt="etikete" class="break">
+        <img src="images/break.jpg" alt="Etikete" class="break">
+        <!--Proizvodi-->
+        <h2 id="proizvodi">Proizvodi</h2>
+        <div id="button_box"> <!--Add the functions-->
+            <button type="button" id="usivne_saten">Ušivne etikete<br>Saten</button>
+            <button type="button" id="usivne_poli">Ušivne etikete<br>Poliester</button>
+            <button type="button" id="samolepljive">Samolepljive etikete</button>
+            <button type="button" id="kartonske">Kartonske etikete</button>
+        </div>
+        <!--Here the divs are supposed to be shown when clicked. Pictures are samples-->
+        <div class="proizvod" id="usivne_saten_div">
+            <h3>Ušivne etikete od satena</h3>
+            <p>Štampane etikete na satenu visokog kvaliteta, posebno pogodne za naznaku 
+                sastava i načina održavanja proizvoda. Širina etikete u rasponu 25-40mm, bele 
+                boje, od materijala izrazito mekane teksture i stoga jako prijatne na dodir, za 
+                čiji kvalitet i postojanost otiska mi garantujemo. Štampa je u crnoj boji, ali 
+                postoji mogućnost i printa u boji. Etikete su pojedinačno sečene i sortirane.</p>
+            <div class="gallery">
+                <img src="images/gallery_sample.jpg" alt="Satenska ušivna etiketa 1">
+                <img src="images/gallery_sample.jpg" alt="Satenska ušivna etiketa 2">
+                <img src="images/gallery_sample.jpg" alt="Satenska ušivna etiketa 3">
+            </div>
+        </div>
     </body>
 </html>

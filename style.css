@@ -60,6 +60,7 @@ ul {
     margin: 0;
     padding: 0;
     position: sticky;
+    top: 0;
     list-style-type: none;
     background-color: #333333;
     height: 50px;
@@ -97,13 +98,15 @@ li:hover {
 
 section {
     padding: 20px;
-    margin: 20px auto;
+    margin: 0px auto 20px;
     text-align: center;
     width: 70%;
 }
 
 h2 {
     font-size: 2em;
+    text-align: center;
+    margin: 50px auto;
 }
 
 h2:not(#brand_name)::first-letter {
@@ -111,7 +114,6 @@ h2:not(#brand_name)::first-letter {
 }
 
 #note {
-    text-decoration: underline;
     transition: color 0.5s;
 }
 
@@ -126,9 +128,68 @@ h2:not(#brand_name)::first-letter {
     padding: 0;
 }
 
+#logo_in_text {
+    display: none;
+}
+
+#button_box {
+    display: flex;
+    margin: 20px auto;
+    width: 80%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    height: 100%;
+    width: 20%;
+    line-height: 100%;
+    border: 0.5px solid #cc7a00;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    background-color: #cc7a00;
+}
+/* not sure if this does anything */
+button:active {
+    background-color: #cc7a00;
+}
+
+.proizvod {
+    margin: 40px auto;
+    padding: 20px;
+    width: 70%;
+    border-top: 5px solid #915700;
+    background-color: rgba(204, 122, 0, 0.281);
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    margin: 20px auto;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.gallery img {
+    width: 30%;
+    height: 30%;
+}
+
 @media screen and (max-width: 850px) {
     #logo {
         display: none;
+    }
+    #logo_in_text {
+        display: block;
+        float: left;
+        margin: 15px;
+        height: 70px;
     }
 }
 
@@ -144,6 +205,14 @@ h2:not(#brand_name)::first-letter {
         display: flex;
         flex-direction: column-reverse;
     }
+    #button_box {
+        flex-wrap: wrap;
+        margin: 20px auto 100px;
+    }
+    button {
+        width: 45%;
+        margin: 10px 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -158,5 +227,9 @@ h2:not(#brand_name)::first-letter {
     }
     .break {
         height: 70px;
+    }
+    .gallery {
+        margin: 10px auto;
+        width: 100%;
     }
 }
