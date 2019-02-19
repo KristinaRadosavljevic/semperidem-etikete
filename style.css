@@ -155,10 +155,6 @@ button {
 button:hover {
     background-color: #cc7a00;
 }
-/* not sure if this does anything */
-button:active {
-    background-color: #cc7a00;
-}
 
 .proizvod {
     margin: 40px auto;
@@ -167,6 +163,7 @@ button:active {
     border-top: 5px solid #915700;
     background-color: rgba(204, 122, 0, 0.281);
     text-align: center;
+    display: none;
 }
 
 .gallery {
