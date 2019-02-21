@@ -1,13 +1,13 @@
 // Displaying the divs
-var satenB = document.getElementById("usivne_saten")
-var poliB = document.getElementById("usivne_poli")
-var samolepB = document.getElementById("samolepljive")
-var kartonB = document.getElementById("kartonske")
+var satenB = document.getElementById("usivne_saten");
+var poliB = document.getElementById("usivne_poli");
+var samolepB = document.getElementById("samolepljive");
+var kartonB = document.getElementById("kartonske");
 
-var saten = document.getElementById("usivne_saten_div")
-var poli = document.getElementById("usivne_poli_div")
-var samolep = document.getElementById("samolepljive_div")
-var karton = document.getElementById("kartonske_div")
+var saten = document.getElementById("usivne_saten_div");
+var poli = document.getElementById("usivne_poli_div");
+var samolep = document.getElementById("samolepljive_div");
+var karton = document.getElementById("kartonske_div");
 
 satenB.addEventListener("click", function satenF() {
     poli.style.display = "none";
@@ -18,6 +18,7 @@ satenB.addEventListener("click", function satenF() {
     kartonB.style.backgroundColor = "transparent";
     if (saten.style.display == "none"){
         saten.style.display = "block";
+        saten.scrollIntoView(false);
         satenB.style.backgroundColor = "#cc7a00";
     }
     else {
@@ -35,6 +36,7 @@ poliB.addEventListener("click", function poliF() {
     kartonB.style.backgroundColor = "transparent";
     if (poli.style.display == "none"){
         poli.style.display = "block";
+        poli.scrollIntoView(false);
         poliB.style.backgroundColor = "#cc7a00";
     }
     else {
@@ -52,6 +54,7 @@ samolepB.addEventListener("click", function samolepF() {
     kartonB.style.backgroundColor = "transparent";
     if (samolep.style.display == "none"){
         samolep.style.display = "block";
+        samolep.scrollIntoView(false);
         samolepB.style.backgroundColor = "#cc7a00";
     }
     else {
@@ -69,6 +72,7 @@ kartonB.addEventListener("click", function kartonF() {
     satenB.style.backgroundColor = "transparent";
     if (karton.style.display == "none"){
         karton.style.display = "block";
+        karton.scrollIntoView(false);
         kartonB.style.backgroundColor = "#cc7a00";
     }
     else {

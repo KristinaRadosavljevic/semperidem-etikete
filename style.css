@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -126,6 +130,7 @@ h2:not(#brand_name)::first-letter {
     height: 100px;
     margin: 0;
     padding: 0;
+    opacity: 0.5;
 }
 
 #logo_in_text {
@@ -156,6 +161,10 @@ button:hover {
     background-color: #cc7a00;
 }
 
+button:focus {
+    outline: none;
+}
+
 .proizvod {
     margin: 40px auto;
     padding: 20px;
@@ -164,6 +173,7 @@ button:hover {
     background-color: rgba(204, 122, 0, 0.281);
     text-align: center;
     display: none;
+    border-bottom: 20px solid white;
 }
 
 .gallery {
