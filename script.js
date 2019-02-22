@@ -80,3 +80,20 @@ kartonB.addEventListener("click", function kartonF() {
         kartonB.style.backgroundColor = "transparent";
     }
 });
+
+// Gallery
+var prev = document.getElementsByClassName("prev");
+var next = document.getElementsByClassName("next");
+var close = document.getElementsByClassName("close");
+var bigPictures = document.getElementsByClassName("in_gallery");
+var galleryDiv = document.getElementsByClassName("gallery_view");
+
+var satenI = document.getElementsByClassName("saten_gallery");
+var poliI = document.getElementsByClassName("poli_gallery");
+var samolepI = document.getElementsByClassName("samolep_gallery");
+var kartonI = document.getElementsByClassName("karton_gallery");
+
+var satenG = [satenI[0].src, satenI[1].src, satenI[2].src];
+var poliG = [poliI[0].src, poliI[1].src, poliI[2].src];
+var samolepG = [samolepI[0].src, samolepI[1].src, samolepI[2].src];
+var kartonG = [kartonI[0].src, kartonI[1].src, kartonI[2].src];
