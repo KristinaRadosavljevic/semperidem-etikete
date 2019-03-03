@@ -185,6 +185,7 @@ button:focus {
 .gallery img {
     width: 30%;
     height: 30%;
+    cursor: pointer;
 }
 
 .gallery_view {
