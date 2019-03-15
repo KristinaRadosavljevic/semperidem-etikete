@@ -152,11 +152,18 @@ button {
     border: 0.5px solid #cc7a00;
     border-radius: 5px;
     cursor: pointer;
-    background-color: transparent;
     transition: background-color 0.5s;
 }
 
-button:hover {
+.inactive {
+    background-color: transparent;
+}
+
+.inactive:hover {
+    background-color: #cc7a00;
+}
+
+.active {
     background-color: #cc7a00;
 }
 
