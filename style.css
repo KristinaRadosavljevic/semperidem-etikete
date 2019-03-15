@@ -255,6 +255,56 @@ button:focus {
     right: 5px;
 }
 
+.cene_uvod {
+    font-size: 0.9em;
+    font-weight: lighter;
+}
+
+table, th, td {
+    border: 0.8px solid #c79f63;
+    border-collapse: collapse;
+}
+
+table {
+    margin: 30px auto;
+    width: 70%;
+    table-layout: fixed;
+}
+
+th {
+    padding: 10px;
+    color: #c79f63;
+    width: 50%;
+}
+
+td {
+    padding: 5px;
+    width: 50%;
+}
+
+tr:hover {
+    background-color: #c79f63;
+}
+
+tr:first-child {
+    background-color: #333333;
+}
+
+tr:first-child:hover {
+    background-color: #333333;
+}
+
+#prices_note {
+    width: 80%;
+    background-color: rgba(196, 142, 61, 0.3);
+    padding: 10px;
+    border-left: 5px solid #915700;
+    border-right: 5px solid #915700;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-size: 0.9em;
+}
+
 @media screen and (max-width: 850px) {
     #logo {
         display: none;
@@ -272,6 +322,9 @@ button:focus {
         width: 100%;
         height: auto;
         max-height: 100%;
+    }
+    table {
+        width: 80%;
     }
 }
 
@@ -313,5 +366,8 @@ button:focus {
     .gallery {
         margin: 10px auto;
         width: 100%;
+    }
+    table {
+        width: 90%;
     }
 }
