@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
         <!--Introductory image and title (cover)-->
@@ -14,17 +15,17 @@
             <div id="cover_text">
             <h1>Proizvodnja Etiketa</h1><hr>
             <h2 id="brand_name"><span class="letter">S</span>emper <span class="letter">I</span>dem</h2>
-            <p id="proposition"><i>Uvek isti</i> kvalitet i pouzdanost.</p>
+            <p id="proposition"><i class="isti">Uvek isti</i> kvalitet i pouzdanost.</p>
             </div>
         </div>
         <!--Top navigation bar-->
         <ul>
             <!--Logo is a sample. Ask for real one-->
-            <li id="logo"><a href="#cover"><img src="images/logo.png" style="height:50px;"></a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-            <li><a href="#cenovnik">Cenovnik</a></li>
-            <li><a href="#proizvodi">Proizvodi</a></li>
-            <li><a href="#o_nama">O nama</a></li>
+            <li id="logo"><a href="#cover" class="nav_a"><img src="images/logo.png" style="height:50px;"></a></li>
+            <li><a href="#kontakt" class="nav_a">Kontakt</a></li>
+            <li><a href="#cenovnik" class="nav_a">Cenovnik</a></li>
+            <li><a href="#proizvodi" class="nav_a">Proizvodi</a></li>
+            <li><a href="#o_nama" class="nav_a">O nama</a></li>
         </ul>
         <!--O nama. Text is a sample-->
         <section id="o_nama">
@@ -35,7 +36,7 @@
                 pouzdanost i pristupačnu cenu?</p>
             <p>Mi Vam možemo ponuditi upravo to! Visok kvalitet izrade različitih vrsta etiketa, 
                 od ušivnih etiketa od poliestera i satena, do kartonskih i samolepljivih etiketa.</p>
-            <p>Zašto <strong id="note">Semper Idem</strong>? <i>Semper Idem</i> na latinskom 
+            <p>Zašto <strong id="note">Semper Idem</strong>? <i id="semper">Semper Idem</i> na latinskom 
                 znači 'uvek isti'. I kao što naš naziv sugeriše, naš proizvod je nešto što se ne 
                 menja. Ni pod uticajem sunca, ni pod uticajem hemije. I kao što već sigurno 
                 znate, etiketa nije samo oznaka porekla, načina održavanja i sastava tkanine 
@@ -218,6 +219,18 @@
         </section>
         <!--Picture break-->
         <img src="images/break.jpg" alt="Etikete" class="break">
+        <!--The contact page-->
+        <h2 id="kontakt">Kontakt</h2>
+        <div id="contact_div">
+            <div class="contact_subdiv">
+                <div class="contact_info"><i class="material-icons">location_on</i><p class="contact_p">Petra Kočića br. 57/2
+                    <br>37000 Kruševac<br>Srbija</p></div>
+                <div class="contact_info"><i class="material-icons">local_phone</i><p class="contact_p">+381 37 3461891
+                    <br>+381 63 7116122</p></div>
+                <div class="contact_info"><i class="material-icons">email</i><p class="contact_p">
+                    <a href="mailto:milan1960miki@aol.com">milan1960miki@aol.com</a></p></div>
+            </div>
+        </div>
         <!--This is the script-->
         <script src="script.js"></script>
     </body>

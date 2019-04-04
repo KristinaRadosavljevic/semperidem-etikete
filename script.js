@@ -16,7 +16,7 @@ satenB.addEventListener("click", function satenF() {
     samolepB.className = "inactive";
     karton.style.display = "none";
     kartonB.className = "inactive";
-    if (saten.style.display == "none"){
+    if (saten.style.display == "none" || saten.style.display == ""){
         saten.style.display = "block";
         saten.scrollIntoView(false);
         satenB.className = "active";
@@ -34,7 +34,7 @@ poliB.addEventListener("click", function poliF() {
     samolepB.className = "inactive";
     karton.style.display = "none";
     kartonB.className = "inactive";
-    if (poli.style.display == "none"){
+    if (poli.style.display == "none" || poli.style.display == ""){
         poli.style.display = "block";
         poli.scrollIntoView(false);
         poliB.className = "active";
@@ -52,7 +52,7 @@ samolepB.addEventListener("click", function samolepF() {
     poliB.className = "inactive";
     karton.style.display = "none";
     kartonB.className = "inactive";
-    if (samolep.style.display == "none"){
+    if (samolep.style.display == "none" || samolep.style.display == ""){
         samolep.style.display = "block";
         samolep.scrollIntoView(false);
         samolepB.className = "active";
@@ -70,7 +70,7 @@ kartonB.addEventListener("click", function kartonF() {
     samolepB.className = "inactive";
     saten.style.display = "none";
     satenB.className = "inactive";
-    if (karton.style.display == "none"){
+    if (karton.style.display == "none" || karton.style.display == ""){
         karton.style.display = "block";
         karton.scrollIntoView(false);
         kartonB.className = "active";
