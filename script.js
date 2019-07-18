@@ -170,3 +170,11 @@ next[0].addEventListener("click", function(){goToNext(0, satenG)});
 next[1].addEventListener("click", function(){goToNext(1, poliG)});
 next[2].addEventListener("click", function(){goToNext(2, samolepG)});
 next[3].addEventListener("click", function(){goToNext(3, kartonG)});
+
+//Shrinking the textarea
+if(screen.width <= 800){
+    document.getElementById("textarea").setAttribute("cols", "30");
+}
+else{
+    document.getElementById("textarea").setAttribute("cols", "50");
+}
