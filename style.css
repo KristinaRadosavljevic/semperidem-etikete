@@ -373,6 +373,17 @@ input::placeholder, textarea::placeholder {
     color: rgba(145, 87, 0, 0.5);
 }
 
+#submit {
+    padding: 15px;
+    background-color: transparent;
+    margin-top: 5px;
+    transition: background-color 0.5s;
+}
+
+#submit:hover {
+    background-color: #cc7a00;
+}
+
 @media screen and (max-width: 850px) {
     #logo {
         display: none;
