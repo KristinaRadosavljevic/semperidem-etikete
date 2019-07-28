@@ -173,8 +173,22 @@ next[3].addEventListener("click", function(){goToNext(3, kartonG)});
 
 //Shrinking the textarea
 if(screen.width <= 800){
-    document.getElementById("textarea").setAttribute("cols", "30");
+    document.getElementById("message").setAttribute("cols", 30);
 }
 else{
-    document.getElementById("textarea").setAttribute("cols", "50");
+    document.getElementById("message").setAttribute("cols", 50);
 }
+
+//Form submit
+document.getElementById("submit").addEventListener("click", function(){
+    var name = document.contact_form.name.value;
+    var email = document.contact_form.email.value;
+    var message = document.contact_form.message.value;
+    var formData = {
+        name: name,
+        email: email,
+        message: message
+    };
+    var formDataJson = JSON.stringify(formData);
+    //Code for sending request
+});
