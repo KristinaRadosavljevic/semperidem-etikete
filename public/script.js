@@ -180,7 +180,7 @@ else{
 }
 
 //Form submit
-document.getElementById("submit").addEventListener("click", function(){
+/*document.getElementById("submit").addEventListener("click", function(){
     var name = document.contact_form.name.value;
     var email = document.contact_form.email.value;
     var message = document.contact_form.message.value;
@@ -191,4 +191,26 @@ document.getElementById("submit").addEventListener("click", function(){
     };
     var formDataJson = JSON.stringify(formData);
     //Code for sending request
-});
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            console.log('ready');
+        }
+    };
+    xhttp.open("POST", "/form-submit", true);
+    xhttp.send(formDataJson);
+    
+});*/
+
+document.getElementById("submit").addEventListener("click", function(){
+fetch('/form-submit', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        name: document.contact_form.name.value,
+        email: document.contact_form.email.value,
+        message: document.contact_form.message.value
+    })
+});});
