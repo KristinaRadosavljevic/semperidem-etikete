@@ -39,7 +39,7 @@ app.post('/form-submit', function(req, res){
     transporter.sendMail(mailOptions, function(error, info){
         if(error){
             console.log(error);
-            res.status(500).send('fail'); //Or another number? Or nothing?
+            res.status(parseInt(error.responseCode)).send('fail'); //Or another number? Or nothing?
         }
         else{
             console.log('Email sent: ' + info.response);

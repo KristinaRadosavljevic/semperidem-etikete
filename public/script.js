@@ -214,13 +214,12 @@ fetch('/form-submit', {
         message: document.contact_form.message.value
     })
 }).then(function(response){
-    console.log("let's see");
     if(response.status == 200){
         console.log('success');
         alert('success');
     }
     else{
-        console.log('fail');
+        console.log('fail ' + response.status);
         alert('fail');
     }
 });
