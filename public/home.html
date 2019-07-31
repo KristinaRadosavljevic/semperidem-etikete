@@ -231,7 +231,7 @@
                     <a href="mailto:milan1960miki@aol.com">milan1960miki@aol.com</a></p></div>
             </div>
             <!--The contact form-->
-            <div class="contact_subdiv">
+            <div class="contact_subdiv" id="form_div">
                 <h3 class="contact_heading">Imate pitanje ili želite da poručite?</h3>
                 <form action="/" name="contact_form" onsubmit="return false">
                     Vaše ime:<br>
@@ -246,7 +246,7 @@
                     <textarea required placeholder="Ovde nam možete napisati poruku" name="message"
                     oninvalid="this.setCustomValidity('Ovo polje je obavezno.')" 
                     oninput="this.setCustomValidity('')" rows="5" cols="50" id="message"></textarea><br>
-                    <input type="submit" id="submit" value="Pošalji">
+                    <input type="submit" id="submit" value="Pošalji"><span id="submit_note">*Sva polja su obavezna.</span>
                 </form>
             </div>
         </div>

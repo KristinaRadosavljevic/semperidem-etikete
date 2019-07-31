@@ -384,6 +384,30 @@ input::placeholder, textarea::placeholder {
     background-color: #cc7a00;
 }
 
+#success_div, #fail_div {
+    width: 80%;
+    margin: 30px auto 10px;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+#success_div {
+    background-color: #d9f2d9;
+    border-color: #67cb67;
+}
+
+#fail_div {
+    background-color: #ffc6b3;
+    border-color: #992600;
+}
+
+#submit_note {
+    font-size: smaller;
+    color: #a6a6a6;
+    margin-left: 15px;
+}
+
 @media screen and (max-width: 850px) {
     #logo {
         display: none;

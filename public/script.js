@@ -180,28 +180,6 @@ else{
 }
 
 //Form submit
-/*document.getElementById("submit").addEventListener("click", function(){
-    var name = document.contact_form.name.value;
-    var email = document.contact_form.email.value;
-    var message = document.contact_form.message.value;
-    var formData = {
-        name: name,
-        email: email,
-        message: message
-    };
-    var formDataJson = JSON.stringify(formData);
-    //Code for sending request
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200){
-            console.log('ready');
-        }
-    };
-    xhttp.open("POST", "/form-submit", true);
-    xhttp.send(formDataJson);
-    
-});*/
-
 document.getElementById("submit").addEventListener("click", function(){
 fetch('/form-submit', {
     method: 'POST',
@@ -215,12 +193,12 @@ fetch('/form-submit', {
     })
 }).then(function(response){
     if(response.status == 200){
-        console.log('success');
-        alert('success');
+        var successHTML = '<h3 class="contact_heading">Imate pitanje ili želite da poručite?</h3><div id="success_div">Hvala Vam na interesovanju. Kontaktiraćemo Vas uskoro.</div>';
+        document.getElementById("form_div").innerHTML = successHTML;
     }
     else{
-        console.log('fail ' + response.status);
-        alert('fail');
+        var failHTML = '<h3 class="contact_heading">Imate pitanje ili želite da poručite?</h3><div id="fail_div">Došlo je do greške. Molimo Vas pokušajte ponovo ili nas kontaktirajte putem mejla ili telefona.</div>';
+        document.getElementById("form_div").innerHTML = failHTML;
     }
 });
 });
