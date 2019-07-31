@@ -202,3 +202,7 @@ fetch('/form-submit', {
     }
 });
 });
+
+//Copyright year update
+var d = new Date();
+document.getElementById("year").innerHTML = d.getFullYear();

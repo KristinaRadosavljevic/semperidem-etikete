@@ -408,6 +408,15 @@ input::placeholder, textarea::placeholder {
     margin-left: 15px;
 }
 
+footer {
+    margin: 40px 0 0 0;
+    padding: 20px;
+    color: #cc7a00;
+    font-size: smaller;
+    font-weight: lighter;
+    background-color: #333333;
+}
+
 @media screen and (max-width: 850px) {
     #logo {
         display: none;
