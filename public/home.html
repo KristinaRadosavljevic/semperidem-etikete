@@ -32,18 +32,20 @@
             <h2>O nama</h2>
             <!--Only show the logo when it's not in the menu-->
             <img src="images/logo.png" alt="Semper Idem logo" id="logo_in_text">
-            <p>Da li ste u dilemi gde da kupite etikete za Vaše prizvode? Tražite kvalitet, 
-                pouzdanost i pristupačnu cenu?</p>
-            <p>Mi Vam možemo ponuditi upravo to! Visok kvalitet izrade različitih vrsta etiketa, 
-                od ušivnih etiketa od poliestera i satena, do kartonskih i samolepljivih etiketa.</p>
-            <p>Zašto <strong id="note">Semper Idem</strong>? <i id="semper">Semper Idem</i> na latinskom 
-                znači 'uvek isti'. I kao što naš naziv sugeriše, naš proizvod je nešto što se ne 
-                menja. Ni pod uticajem sunca, ni pod uticajem hemije. I kao što već sigurno 
-                znate, etiketa nije samo oznaka porekla, načina održavanja i sastava tkanine 
-                od koje je Vaša odeća izrađena. Etiketa je takođe ogledalo Vašeg proizvoda. 
-                Stoga želimo da se našem proizvodu, koji će nadamo se biti deo Vašeg, posvetimo 
-                sa pažnjom i preciznošću i tako damo svoj skromni doprinos kreiranju vizuelnog 
-                identiteta Vaše odeće.</p>
+            <p>Da li ste u dilemi gde da kupite etikete za Vaše prizvode? Ili ne znate kako da
+                posavetujete kupca da, uz buket cveća ili poklon, na originalan način prenese
+                poruku voljenoj osobi? Tražite kvalitet, pouzdanost i pristupačnu cenu?</p>
+            <p>Mi Vam možemo ponuditi upravo to! Visok kvalitet izrade kartonskih etiketa, 
+                poklon čestitki i tagova.</p>
+            <p>Zašto <strong class="bold_text">Semper Idem</strong>? <i id="semper">Semper Idem</i> na latinskom 
+                znači 'uvek isti'. Za nas je jednom stečeno prijateljstvo, poslovno
+                prijateljstvo, nešto čega se tako lako ne odričemo. Budite stoga sigurni da ćemo
+                biti uvek onakvi kakve ste nas upoznali, neprestano se trudeći da pokažemo da je
+                ono što nas krasi, a to je <strong class="bold_text">profesionalizam, kvalitet i poštovanje rokova</strong>, 
+                nešto što se samo po sebi razume.</p>
+            <p>I još nešto! Uvek imajte u vidu da etiketa nije samo puki dodatak. Etiketa je mnogo
+                više od toga. Ona je ogledalo onoga što dajete ili prodajete pa, može se reći,
+                posredno i Vas samih.</p>
         </section>
         <!--Picture break-->
         <img src="images/break.jpg" alt="Etikete" class="break">
@@ -54,7 +56,6 @@
             <button type="button" id="usivne_saten" class="inactive">Ušivne etikete<br>Saten</button>
             <button type="button" id="usivne_poli" class="inactive">Ušivne etikete<br>Poliester</button>
             <button type="button" id="samolepljive" class="inactive">Samolepljive etikete</button>
-            <button type="button" id="kartonske" class="inactive">Kartonske etikete</button>
         </div>
         <!--Here the divs are supposed to be shown when clicked. Pictures are samples-->
         <div class="proizvod" id="usivne_saten_div">
@@ -110,26 +111,6 @@
                 <img src="images/gallery1.jpg" alt="Samolepljiva etiketa 1" class="samolep_gallery">
                 <img src="images/gallery2.jpg" alt="Samolepljiva etiketa 2" class="samolep_gallery">
                 <img src="images/gallery3.jpg" alt="Samolepljiva etiketa 3" class="samolep_gallery">
-            </div>
-        </div>
-        <!--Gallery view-->
-        <div class="gallery_view">
-            <button type="button" class="close">&times;</button>
-            <div class="img_container">
-                <img src="images/gallery1.jpg" class="in_gallery">
-            </div>
-            <button type="button" class="prev">&#10094;</button>
-            <button type="button" class="next">&#10095;</button>
-        </div>
-        <div class="proizvod" id="kartonske_div">
-            <h3>Kartonske etikete</h3>
-            <p>Etikete od čvrstog kvalitetnog kartona su jednostavan način isticanja Vašeg 
-                brenda na odeći i modnim dodacima. Debljina kartona je 2mm. Štampa je u boji 
-                po želji, a karton sečemo u različitim veličinama i oblicima.</p>
-            <div class="gallery">
-                <img src="images/gallery1.jpg" alt="Kartonska etiketa 1" class="karton_gallery">
-                <img src="images/gallery2.jpg" alt="Kartonska ušivna etiketa 2" class="karton_gallery">
-                <img src="images/gallery3.jpg" alt="Kartonska etiketa 3" class="karton_gallery">
             </div>
         </div>
         <!--Gallery view-->
@@ -245,11 +226,13 @@
                     Vaša poruka:<br>
                     <textarea required placeholder="Ovde nam možete napisati poruku" name="message"
                     oninvalid="this.setCustomValidity('Ovo polje je obavezno.')" 
-                    oninput="this.setCustomValidity('')" rows="5" cols="50" id="message"></textarea><br>
+                    oninput="this.setCustomValidity('')" rows="5" id="message"></textarea><br>
                     <input type="submit" id="submit" value="Pošalji"><span id="submit_note">*Sva polja su obavezna.</span>
                 </form>
             </div>
         </div>
+        <!--Back to the beginning button for mobile-->
+        <a href="#cover" class="back_to_top">Vrati se na početak</a>
         <!--Footer-->
         <footer>Copyright &copy; <span id="year"></span> Semper Idem</footer>
         <!--This is the script-->

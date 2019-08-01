@@ -117,11 +117,11 @@ h2:not(#brand_name)::first-letter {
     color: #cc7a00;
 }
 
-#note {
+.bold_text {
     transition: color 0.5s;
 }
 
-#note:hover {
+.bold_text:hover {
     color: #915700;
 }
 
@@ -145,10 +145,11 @@ h2:not(#brand_name)::first-letter {
     width: 100%;
     height: 50px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 button {
+    margin: 0 20px;
     height: 100%;
     width: 20%;
     line-height: 100%;
@@ -358,9 +359,14 @@ a[href*="mailto"] {
 form input, form textarea {
     margin: 10px 0;
     border-radius: 5px;
-    padding: 3px;
+    padding: 7px;
     border: 0.5px solid rgba(0, 0, 0, 0.5);
     transition: border 0.2s;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
 }
 
 input:focus, textarea:focus {
@@ -417,6 +423,23 @@ footer {
     background-color: #333333;
 }
 
+.back_to_top {
+    display: none;
+    width: max-content;
+    margin: 20px auto;
+    padding: 10px;
+    border: 0.5px solid #cc7a00;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: black;
+}
+
+.back_to_top:hover {
+    background-color: #cc7a00;
+}
+
 @media screen and (max-width: 850px) {
     #logo {
         display: none;
@@ -468,7 +491,10 @@ footer {
     }
     button {
         width: 45%;
-        margin: 10px 0;
+        margin: 5px 5px;
+    }
+    .back_to_top {
+        display: block;
     }
 }
 
