@@ -1,57 +1,57 @@
 // Displaying the divs
-var satenB = document.getElementById("usivne_saten");
-var poliB = document.getElementById("usivne_poli");
-var samolepB = document.getElementById("samolepljive");
+var etiketeB = document.getElementById("etikete");
+var cestitkeB = document.getElementById("cestitke");
+var tagoviB = document.getElementById("tagovi");
 
-var saten = document.getElementById("usivne_saten_div");
-var poli = document.getElementById("usivne_poli_div");
-var samolep = document.getElementById("samolepljive_div");
+var etikete = document.getElementById("etikete_div");
+var cestitke = document.getElementById("cestitke_div");
+var tagovi = document.getElementById("tagovi_div");
 
-satenB.addEventListener("click", function satenF() {
-    poli.style.display = "none";
-    poliB.className = "inactive";
-    samolep.style.display = "none";
-    samolepB.className = "inactive";
-    if (saten.style.display == "none" || saten.style.display == ""){
-        saten.style.display = "block";
-        saten.scrollIntoView(false);
-        satenB.className = "active";
+etiketeB.addEventListener("click", function etiketeF() {
+    cestitke.style.display = "none";
+    cestitkeB.className = "inactive";
+    tagovi.style.display = "none";
+    tagoviB.className = "inactive";
+    if (etikete.style.display == "none" || etikete.style.display == ""){
+        etikete.style.display = "block";
+        etikete.scrollIntoView(false);
+        etiketeB.className = "active";
     }
     else {
-        saten.style.display = "none";
-        satenB.className = "inactive";
+        etikete.style.display = "none";
+        etiketeB.className = "inactive";
     }
 });
 
-poliB.addEventListener("click", function poliF() {
-    saten.style.display = "none";
-    satenB.className = "inactive";
-    samolep.style.display = "none";
-    samolepB.className = "inactive";
-    if (poli.style.display == "none" || poli.style.display == ""){
-        poli.style.display = "block";
-        poli.scrollIntoView(false);
-        poliB.className = "active";
+cestitkeB.addEventListener("click", function cestitkeF() {
+    etikete.style.display = "none";
+    etiketeB.className = "inactive";
+    tagovi.style.display = "none";
+    tagoviB.className = "inactive";
+    if (cestitke.style.display == "none" || cestitke.style.display == ""){
+        cestitke.style.display = "block";
+        cestitke.scrollIntoView(false);
+        cestitkeB.className = "active";
     }
     else {
-        poli.style.display = "none";
-        poliB.className = "inactive";
+        cestitke.style.display = "none";
+        cestitkeB.className = "inactive";
     }
 });
 
-samolepB.addEventListener("click", function samolepF() {
-    saten.style.display = "none";
-    satenB.className = "inactive";
-    poli.style.display = "none";
-    poliB.className = "inactive";
-    if (samolep.style.display == "none" || samolep.style.display == ""){
-        samolep.style.display = "block";
-        samolep.scrollIntoView(false);
-        samolepB.className = "active";
+tagoviB.addEventListener("click", function tagoviF() {
+    etikete.style.display = "none";
+    etiketeB.className = "inactive";
+    cestitke.style.display = "none";
+    cestitkeB.className = "inactive";
+    if (tagovi.style.display == "none" || tagovi.style.display == ""){
+        tagovi.style.display = "block";
+        tagovi.scrollIntoView(false);
+        tagoviB.className = "active";
     }
     else {
-        samolep.style.display = "none";
-        samolepB.className = "inactive";
+        tagovi.style.display = "none";
+        tagoviB.className = "inactive";
     }
 });
 
@@ -62,13 +62,13 @@ var close = document.getElementsByClassName("close");
 var bigPictures = document.getElementsByClassName("in_gallery");
 var galleryDiv = document.getElementsByClassName("gallery_view");
 
-var satenI = document.getElementsByClassName("saten_gallery");
-var poliI = document.getElementsByClassName("poli_gallery");
-var samolepI = document.getElementsByClassName("samolep_gallery");
+var etiketeI = document.getElementsByClassName("etikete_gallery");
+var cestitkeI = document.getElementsByClassName("cestitke_gallery");
+var tagoviI = document.getElementsByClassName("tagovi_gallery");
 
-var satenG = [satenI[0].src, satenI[1].src, satenI[2].src];
-var poliG = [poliI[0].src, poliI[1].src, poliI[2].src];
-var samolepG = [samolepI[0].src, samolepI[1].src, samolepI[2].src];
+var etiketeG = [etiketeI[0].src, etiketeI[1].src, etiketeI[2].src];
+var cestitkeG = [cestitkeI[0].src, cestitkeI[1].src, cestitkeI[2].src];
+var tagoviG = [tagoviI[0].src, tagoviI[1].src, tagoviI[2].src];
 
 // Opening the gallery view on the picture that was clicked
 function openGallery(categoryIndex, pictureIndex, galleryArray){
@@ -88,15 +88,15 @@ function openGallery(categoryIndex, pictureIndex, galleryArray){
     };
 };
 
-satenI[0].addEventListener("click", function(){openGallery(0, 0, satenG)});
-satenI[1].addEventListener("click", function(){openGallery(0, 1, satenG)});
-satenI[2].addEventListener("click", function(){openGallery(0, 2, satenG)});
-poliI[0].addEventListener("click", function(){openGallery(1, 0, poliG)});
-poliI[1].addEventListener("click", function(){openGallery(1, 1, poliG)});
-poliI[2].addEventListener("click", function(){openGallery(1, 2, poliG)});
-samolepI[0].addEventListener("click", function(){openGallery(2, 0, samolepG)});
-samolepI[1].addEventListener("click", function(){openGallery(2, 1, samolepG)});
-samolepI[2].addEventListener("click", function(){openGallery(2, 2, samolepG)});
+etiketeI[0].addEventListener("click", function(){openGallery(0, 0, etiketeG)});
+etiketeI[1].addEventListener("click", function(){openGallery(0, 1, etiketeG)});
+etiketeI[2].addEventListener("click", function(){openGallery(0, 2, etiketeG)});
+cestitkeI[0].addEventListener("click", function(){openGallery(1, 0, cestitkeG)});
+cestitkeI[1].addEventListener("click", function(){openGallery(1, 1, cestitkeG)});
+cestitkeI[2].addEventListener("click", function(){openGallery(1, 2, cestitkeG)});
+tagoviI[0].addEventListener("click", function(){openGallery(2, 0, tagoviG)});
+tagoviI[1].addEventListener("click", function(){openGallery(2, 1, tagoviG)});
+tagoviI[2].addEventListener("click", function(){openGallery(2, 2, tagoviG)});
 
 // Closing the gallery
 close[0].addEventListener("click", function(){
@@ -128,12 +128,12 @@ function goToNext(index, galleryArray){
         next[index].style.display = "none";
     };
 };
-prev[0].addEventListener("click", function(){goToPrev(0, satenG)});
-prev[1].addEventListener("click", function(){goToPrev(1, poliG)});
-prev[2].addEventListener("click", function(){goToPrev(2, samolepG)});
-next[0].addEventListener("click", function(){goToNext(0, satenG)});
-next[1].addEventListener("click", function(){goToNext(1, poliG)});
-next[2].addEventListener("click", function(){goToNext(2, samolepG)});
+prev[0].addEventListener("click", function(){goToPrev(0, etiketeG)});
+prev[1].addEventListener("click", function(){goToPrev(1, cestitkeG)});
+prev[2].addEventListener("click", function(){goToPrev(2, tagoviG)});
+next[0].addEventListener("click", function(){goToNext(0, etiketeG)});
+next[1].addEventListener("click", function(){goToNext(1, cestitkeG)});
+next[2].addEventListener("click", function(){goToNext(2, tagoviG)});
 
 //Form submit
 document.getElementById("submit").addEventListener("click", function(){

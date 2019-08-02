@@ -16,8 +16,7 @@ body {
     margin: 0;
     text-align: center;
     height: 45%;
-    /* Find an appropriate picture */
-    background-image: url('/images/cover.jpg'), url('images/cover2.jpg');
+    background-image: url('images/proizvodnja-etiketa-cover.jpg');
     background-size: cover;
     padding: 20px;
 }
@@ -70,6 +69,38 @@ ul {
     height: 50px;
 }
 
+.dropdown {
+    display: none;
+    z-index: 1;
+    position: relative;
+    top: 0;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.dropdown li {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.5s;
+}
+
+.dropdown li:hover {
+    background-color: #333333;
+}
+
+.dropdown_a {
+    display: block;
+    margin: 0;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.drop_init:hover .dropdown {
+    display: flex;
+}
+
 li {
     margin: 0;
     padding: 0;
@@ -100,11 +131,15 @@ li:hover {
     background-color: #915700;
 }
 
-section {
+section:not(#kontakt) {
     padding: 20px 0;
     margin: 0px auto 20px;
     text-align: center;
     width: 70%;
+}
+
+#kontakt {
+    padding: 20px 0;
 }
 
 h2 {
@@ -130,7 +165,7 @@ h2:not(#brand_name)::first-letter {
     height: 100px;
     margin: 0;
     padding: 0;
-    opacity: 0.5;
+    opacity: 0.3;
     position: relative;
     z-index: -1;
 }
@@ -157,6 +192,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.5s;
+    line-height: 1.3;
 }
 
 .inactive {
@@ -460,6 +496,7 @@ footer {
     }
     table {
         width: 80%;
+        min-width: 300px;
     }
     #contact_div {
         flex-direction: column;
@@ -514,8 +551,5 @@ footer {
     .gallery {
         margin: 10px auto;
         width: 100%;
-    }
-    table {
-        width: 90%;
     }
 }

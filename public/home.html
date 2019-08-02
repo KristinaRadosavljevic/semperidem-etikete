@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sr">
     <head>
-        <title>Etikete - usivne i samolepljive | Semper Idem</title>
+        <title>Etikete, čestitke i tagovi | Semper Idem</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Meta description needed. Consult. 150-160 characters-->
         <meta name="description" content="">
@@ -20,14 +20,18 @@
         </div>
         <!--Top navigation bar-->
         <ul>
-            <!--Logo is a sample. Ask for real one-->
             <li id="logo"><a href="#cover" class="nav_a"><img src="images/logo.png" style="height:50px;"></a></li>
             <li><a href="#kontakt" class="nav_a">Kontakt</a></li>
             <li><a href="#cenovnik" class="nav_a">Cenovnik</a></li>
-            <li><a href="#proizvodi" class="nav_a">Proizvodi</a></li>
+            <li class="drop_init"><a href="#proizvodi" class="nav_a">Proizvodi</a>
+                <ul class="dropdown">
+                    <li><a href="" class="dropdown_a">Kartonske etikete</a></li>
+                    <li><a href="" class="dropdown_a">Poklon čestitke</a></li>
+                    <li><a href="" class="dropdown_a">Tagovi</a></li>
+                </ul></li>
             <li><a href="#o_nama" class="nav_a">O nama</a></li>
         </ul>
-        <!--O nama. Text is a sample-->
+        <!--O nama-->
         <section id="o_nama">
             <h2>O nama</h2>
             <!--Only show the logo when it's not in the menu-->
@@ -48,27 +52,25 @@
                 posredno i Vas samih.</p>
         </section>
         <!--Picture break-->
-        <img src="images/break.jpg" alt="Etikete" class="break">
+        <img src="images/etikete-panorama.jpg" alt="Etikete" class="break">
         <!--Proizvodi-->
         <section id="proizvodi">
         <h2>Proizvodi</h2>
         <div id="button_box"> <!--Add the functions-->
-            <button type="button" id="usivne_saten" class="inactive">Ušivne etikete<br>Saten</button>
-            <button type="button" id="usivne_poli" class="inactive">Ušivne etikete<br>Poliester</button>
-            <button type="button" id="samolepljive" class="inactive">Samolepljive etikete</button>
+            <button type="button" id="etikete" class="inactive">Kartonske<br>etikete</button>
+            <button type="button" id="cestitke" class="inactive">Poklon<br>čestitke</button>
+            <button type="button" id="tagovi" class="inactive">Tagovi</button>
         </div>
         <!--Here the divs are supposed to be shown when clicked. Pictures are samples-->
-        <div class="proizvod" id="usivne_saten_div">
-            <h3>Ušivne etikete od satena</h3>
-            <p>Štampane etikete na satenu visokog kvaliteta, posebno pogodne za naznaku 
-                sastava i načina održavanja proizvoda. Širina etikete u rasponu 25-40mm, bele 
-                boje, od materijala izrazito mekane teksture i stoga jako prijatne na dodir, za 
-                čiji kvalitet i postojanost otiska mi garantujemo. Štampa je u crnoj boji, ali 
-                postoji mogućnost i printa u boji. Etikete su pojedinačno sečene i sortirane.</p>
+        <div class="proizvod" id="etikete_div">
+            <h3>Kartonske etikete</h3>
+            <p>Veliki izbor etiketa za obeležavanje proizvoda, različitih dimenzija i oblika na 
+                kvalitetnom glossy polukartonu. Ukoliko imate bilo kakvih nedoumica oko konačnog 
+                izgleda proizvoda stojimo Vam na raspolaganju.</p>
             <div class="gallery">
-                <img src="images/gallery1.jpg" alt="Satenska ušivna etiketa 1" class="saten_gallery">
-                <img src="images/gallery2.jpg" alt="Satenska ušivna etiketa 2" class="saten_gallery">
-                <img src="images/gallery3.jpg" alt="Satenska ušivna etiketa 3" class="saten_gallery">
+                <img src="images/gallery1.jpg" alt="Satenska ušivna etiketa 1" class="etikete_gallery">
+                <img src="images/gallery2.jpg" alt="Satenska ušivna etiketa 2" class="etikete_gallery">
+                <img src="images/gallery3.jpg" alt="Satenska ušivna etiketa 3" class="etikete_gallery">
             </div>
         </div>
         <!--Gallery view-->
@@ -80,16 +82,14 @@
             <button type="button" class="prev">&#10094;</button>
             <button type="button" class="next">&#10095;</button>
         </div>
-        <div class="proizvod" id="usivne_poli_div">
-            <h3>Ušivne etikete od poliestera</h3>
-            <p>Etikete od najlona/poliestera su čvrste, izuzetno izdržljive i otporne na habanje 
-                Veoma lako se ušivaju na određenom mestu na garderobi, a po potrebi se i lako 
-                skidaju. Proizvodimo ih u beloj boji sa štampom u boji po izboru. Posebno pogodne 
-                za odeću, modne dodatke i slično.</p>
+        <div class="proizvod" id="cestitke_div">
+            <h3>Poklon čestitke</h3>
+            <p>Naše čestitke će svaki poklon učiniti posebnim i ličnim. Obradujte svoje najdraže 
+                uz specijalnu poruku na prelepo dizajniranoj čestitki.</p>
             <div class="gallery">
-                <img src="images/gallery1.jpg" alt="Poliester ušivna etiketa 1" class="poli_gallery">
-                <img src="images/gallery2.jpg" alt="Poliester ušivna etiketa 2" class="poli_gallery">
-                <img src="images/gallery3.jpg" alt="Poliester ušivna etiketa 3" class="poli_gallery">
+                <img src="images/gallery1.jpg" alt="Poliester ušivna etiketa 1" class="cestitke_gallery">
+                <img src="images/gallery2.jpg" alt="Poliester ušivna etiketa 2" class="cestitke_gallery">
+                <img src="images/gallery3.jpg" alt="Poliester ušivna etiketa 3" class="cestitke_gallery">
             </div>
         </div>
         <!--Gallery view-->
@@ -101,16 +101,16 @@
             <button type="button" class="prev">&#10094;</button>
             <button type="button" class="next">&#10095;</button>
         </div>
-        <div class="proizvod" id="samolepljive_div">
-            <h3>Samolepljive etikete</h3>
-            <p>Samolepljive etikete predstavljaju vrlo jeftin način za označavanje cene proizvoda, 
-                paketa ili robe na policama. Ukoliko je etiketa zalepljena na tekstilnom 
-                proizvodu, može se bez traga lako ukloniti s obzirom na to da ne zahteva ušivanje. 
-                Proizvodimo ih u standardnim veličinama.</p>
+        <div class="proizvod" id="tagovi_div">
+            <h3>Tagovi</h3>
+            <p>Ne znate kako da, uz prigodan poklon, na originalan način iskažete ljubav 
+                voljenoj osobi? Ili kako da upotpunite čestitke bliskim prijateljima povodom njihovog 
+                venčanja? Naši tagovi će Vam pomoći da svoja osećanja i želje prenesete na poseban 
+                i kreativan način. A tu su naravno i specijalni tagovi za flaše!</p>
             <div class="gallery">
-                <img src="images/gallery1.jpg" alt="Samolepljiva etiketa 1" class="samolep_gallery">
-                <img src="images/gallery2.jpg" alt="Samolepljiva etiketa 2" class="samolep_gallery">
-                <img src="images/gallery3.jpg" alt="Samolepljiva etiketa 3" class="samolep_gallery">
+                <img src="images/gallery1.jpg" alt="Samolepljiva etiketa 1" class="tagovi_gallery">
+                <img src="images/gallery2.jpg" alt="Samolepljiva etiketa 2" class="tagovi_gallery">
+                <img src="images/gallery3.jpg" alt="Samolepljiva etiketa 3" class="tagovi_gallery">
             </div>
         </div>
         <!--Gallery view-->
@@ -124,84 +124,54 @@
         </div>
         </section>
         <!--Picture break-->
-        <img src="images/break.jpg" alt="Etikete" class="break">
+        <img src="images/etikete-panorama.jpg" alt="Etikete" class="break">
         <!--Cenovnik-->
         <section id="cenovnik">
             <h2>Cenovnik</h2>
-            <p class="cene_uvod">Ne ograničavamo minimalnu narudžbinu. Priprema za štampu (izrada idejnog rešenja) 
-                za narudžbine do 500 komada uključena je u cenu. Cena etiketa i deklaracija 
-                zavisi od veličine, vrste materijala za izradu i tiraža.</p>
-            <p class="cene_uvod">Ukoliko imate urađenu grafiku budućeg izgleda etikete, dostavite nam je, a mi se 
-                obavezujemo da ćemo je se u izradi verno pridržavati. Postoji takođe i mogućnost 
-                da nama prepustite brigu o grafičkoj pripremi i izradi dizajna, od ideje do 
-                konačnog izgleda proizvoda.</p>
-            <p class="cene_uvod">Gotove etikete isporučujemo kurirskom službom na Vašu adresu. Za narudžbine 
-                preko 500 komada mi snosimo troškove dostave.</p>
+            <p class="cene_uvod">Ne ograničavamo minimalnu narudžbinu. Ukoliko imate urađenu 
+                grafiku budućeg izgleda etikete ili čestitke, dostavite nam je, a mi se 
+                obavezujemo da ćemo je se u izradi verno pridržavati. </p>
+            <p class="cene_uvod">Sve cene u tabeli su date bez uračunatih troškova otpreme. 
+                U poslednjoj koloni je data minimalna količina proizvoda koju je potrebno 
+                naručiti da bismo troškove otpreme snosili mi.</p>
+            <p class="cene_uvod">Gotove proizvode isporučujemo kurirskom službom na Vašu adresu.</p>
             <!--Table with prices-->
             <table>
                 <tr>
-                    <th>Vrsta ušivnih etiketa</th>
-                    <th>Minimalna cena po komadu u dinarima*</th>
+                    <th>Naziv proizvoda</th>
+                    <th>Cena po komadu u dinarima*</th>
+                    <th>Minimalna količina za besplatnu otpremu</th>
                 </tr>
                 <tr>
-                    <td>Najlon 25mm</td>
-                    <td>1,50</td>
+                    <td>Kartonske etikete</td>
+                    <td>Zavisi od veličine</td>
+                    <td>300 komada</td>
                 </tr>
                 <tr>
-                    <td>Najlon 30mm</td>
-                    <td>1,50</td>
+                    <td>Poklon čestitke</td>
+                    <td>8,00 RSD</td>
+                    <td>200 komada</td>
                 </tr>
                 <tr>
-                    <td>Najlon 35mm</td>
-                    <td>2,00</td>
+                    <td>Tagovi</td>
+                    <td>80,00 RSD</td>
+                    <td>50 komada</td>
                 </tr>
                 <tr>
-                    <td>Najlon 40mm</td>
-                    <td>2,00</td>
-                </tr>
-                <tr>
-                    <td>Poliester 25mm</td>
-                    <td>2,00</td>
-                </tr>
-                <tr>
-                    <td>Poliester 30mm</td>
-                    <td>2,00</td>
-                </tr>
-                <tr>
-                    <td>Poliester 35mm</td>
-                    <td>2,50</td>
-                </tr>
-                <tr>
-                    <td>Poliester 40mm</td>
-                    <td>2,50</td>
-                </tr>
-                <tr>
-                    <td>Saten 25mm</td>
-                    <td>2,50</td>
-                </tr>
-                <tr>
-                    <td>Saten 30mm</td>
-                    <td>2,50</td>
-                </tr>
-                <tr>
-                    <td>Saten 35mm</td>
-                    <td>3,00</td>
-                </tr>
-                <tr>
-                    <td>Saten 40mm</td>
-                    <td>3,00</td>
+                    <td>Tagovi za flaše</td>
+                    <td>40,00 RSD</td>
+                    <td>50 komada</td>
                 </tr>
             </table>
             <!--Note at the end of the table-->
-            <div id="prices_note">* Konačna cena zavisi od veličine etikete kao i količine 
-                naručenih proizvoda. Cene <strong>samolepljivih</strong> i <strong>kartonskih 
-                etiketa</strong> zavise od veličine etikete, dizajna, oblika i tiraža i 
-                utvrdiće se u neposrednom kontaktu sa naručiocem.</div>
+            <div id="prices_note">* Cene su date <strong>bez troškova otpreme</strong>. Troškovi 
+                otpreme proizvoda obuhvataju troškove pakovanja i poštanske troškove.</div>
         </section>
         <!--Picture break-->
-        <img src="images/break.jpg" alt="Etikete" class="break">
+        <img src="images/etikete-panorama.jpg" alt="Etikete" class="break">
         <!--The contact page-->
-        <h2 id="kontakt">Kontakt</h2>
+        <section id="kontakt">
+        <h2>Kontakt</h2>
         <div id="contact_div">
             <div class="contact_subdiv">
                 <div class="contact_info"><i class="material-icons">location_on</i><p class="contact_p">Petra Kočića br. 57/2
@@ -231,6 +201,7 @@
                 </form>
             </div>
         </div>
+        </section>
         <!--Back to the beginning button for mobile-->
         <a href="#cover" class="back_to_top">Vrati se na početak</a>
         <!--Footer-->
