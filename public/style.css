@@ -76,6 +76,11 @@ ul {
     top: 0;
     flex-direction: column;
     list-style-type: none;
+    background-color: white;
+}
+
+.drop_init:hover .dropdown {
+    display: flex;
 }
 
 .dropdown li {
@@ -95,10 +100,6 @@ ul {
     padding: 20px 20px;
     text-decoration: none;
     color: white;
-}
-
-.drop_init:hover .dropdown {
-    display: flex;
 }
 
 li {
@@ -283,6 +284,7 @@ button:focus {
     height: 50px;
     margin: 0;
     background-color: transparent;
+    line-height: 100%;
 }
 
 .prev, .next {
@@ -294,6 +296,7 @@ button:focus {
     height: 50px;
     color: white;
     background-color: transparent;
+    line-height: 100%;
 }
 
 .prev {
@@ -522,6 +525,9 @@ footer {
         display: flex;
         flex-direction: column-reverse;
     }
+    .dropdown {
+        display: flex;
+    }
     #button_box {
         flex-wrap: wrap;
         margin: 20px auto 100px;
@@ -550,6 +556,12 @@ footer {
     }
     .gallery {
         margin: 10px auto;
+        width: 100%;
+    }
+    .gallery img:last-child, .gallery img:nth-child(2) {
+        display: none;
+    }
+    .gallery img:first-child {
         width: 100%;
     }
 }
