@@ -162,3 +162,9 @@ fetch('/form-submit', {
 //Copyright year update
 var d = new Date();
 document.getElementById("year").innerHTML = d.getFullYear();
+
+//Change navigation logo if screen is too broad
+var logoNav = document.getElementById("logoNav");
+if(screen.availWidth < 900){
+    logoNav.src = "images/semper-idem-logo.png";
+}

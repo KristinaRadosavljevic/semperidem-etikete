@@ -223,6 +223,10 @@ button:focus {
     border-bottom: 20px solid white;
 }
 
+.product_page_from_div {
+    color: #915700;
+}
+
 .gallery {
     display: flex;
     margin: 20px auto;
@@ -372,6 +376,10 @@ tr:first-child:hover {
     width: 50%;
 }
 
+.contact_subdiv:first-child {
+    margin-top: 50px;
+}
+
 .contact_info {
     margin: 10px auto 40px;
     display: flex;
@@ -507,6 +515,12 @@ footer {
     .contact_subdiv {
         width: 100%;
     }
+    .contact_subdiv:first-child {
+        margin-top: 0;
+    }
+    .contact_info:last-child {
+        width: 300px;
+    }
     .contact_info {
         text-align: center;
         width: 200px;
@@ -535,6 +549,9 @@ footer {
     button {
         width: 45%;
         margin: 5px 5px;
+    }
+    section:not(#kontakt) {
+        width: 80%;
     }
     .back_to_top {
         display: block;

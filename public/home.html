@@ -3,8 +3,9 @@
     <head>
         <title>Etikete, čestitke i tagovi | Semper Idem</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Meta description needed. Consult. 150-160 characters-->
-        <meta name="description" content="">
+        <meta name="description" content="Ručno rađene kartonske etikete, poklon čestitke 
+            različitih namena i veličina i ukrasni tagovi za poklone i flaše. Pogledajte našu 
+            ponudu i poručite već danas!">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -20,11 +21,12 @@
         </div>
         <!--Top navigation bar-->
         <ul>
-            <li id="logo"><a href="#cover" class="nav_a"><img src="images/logo.png" style="height:50px;"></a></li>
+            <li id="logo"><a href="#cover" class="nav_a"><img src="images/semper-idem-logo-nav.png" style="height:50px;" id="logoNav"></a></li>
             <li><a href="#kontakt" class="nav_a">Kontakt</a></li>
             <li><a href="#cenovnik" class="nav_a">Cenovnik</a></li>
             <li class="drop_init"><a href="#proizvodi" class="nav_a">Proizvodi</a>
                 <ul class="dropdown">
+                    <!--Add href to lead to relevant pages-->
                     <li><a href="" class="dropdown_a">Kartonske etikete</a></li>
                     <li><a href="" class="dropdown_a">Poklon čestitke</a></li>
                     <li><a href="" class="dropdown_a">Tagovi</a></li>
@@ -35,7 +37,7 @@
         <section id="o_nama">
             <h2>O nama</h2>
             <!--Only show the logo when it's not in the menu-->
-            <img src="images/logo.png" alt="Semper Idem logo" id="logo_in_text">
+            <img src="images/semper-idem-logo.png" alt="Semper Idem logo" id="logo_in_text">
             <p>Da li ste u dilemi gde da kupite etikete za Vaše prizvode? Ili ne znate kako da
                 posavetujete kupca da, uz buket cveća ili poklon, na originalan način prenese
                 poruku voljenoj osobi? Tražite kvalitet, pouzdanost i pristupačnu cenu?</p>
@@ -72,6 +74,8 @@
                 <img src="images/gallery2.jpg" alt="Satenska ušivna etiketa 2" class="etikete_gallery">
                 <img src="images/gallery3.jpg" alt="Satenska ušivna etiketa 3" class="etikete_gallery">
             </div>
+            <!--Add href-->
+            <a class="product_page_from_div" href="">Kompletna ponuda kartonskih etiketa</a>
         </div>
         <!--Gallery view-->
         <div class="gallery_view">
@@ -91,6 +95,8 @@
                 <img src="images/gallery2.jpg" alt="Poliester ušivna etiketa 2" class="cestitke_gallery">
                 <img src="images/gallery3.jpg" alt="Poliester ušivna etiketa 3" class="cestitke_gallery">
             </div>
+            <!--Add href-->
+            <a class="product_page_from_div" href="">Kompletna ponuda poklon čestitki</a>
         </div>
         <!--Gallery view-->
         <div class="gallery_view">
@@ -112,6 +118,8 @@
                 <img src="images/gallery2.jpg" alt="Samolepljiva etiketa 2" class="tagovi_gallery">
                 <img src="images/gallery3.jpg" alt="Samolepljiva etiketa 3" class="tagovi_gallery">
             </div>
+            <!--Add href-->
+            <a class="product_page_from_div" href="">Kompletna ponuda tagova</a>
         </div>
         <!--Gallery view-->
         <div class="gallery_view">
@@ -148,8 +156,18 @@
                     <td>300 komada</td>
                 </tr>
                 <tr>
-                    <td>Poklon čestitke</td>
+                    <td>Poklon čestitke sa satenskom trakom za vezivanje</td>
                     <td>8,00 RSD</td>
+                    <td>200 komada</td>
+                </tr>
+                <tr>
+                    <td>Poklon čestitke na preklop 60x80 mm</td>
+                    <td>20,00 RSD</td>
+                    <td>200 komada</td>
+                </tr>
+                <tr>
+                    <td>Poklon čestitke na preklop 100x140 mm</td>
+                    <td>50,00 RSD</td>
                     <td>200 komada</td>
                 </tr>
                 <tr>
@@ -174,12 +192,12 @@
         <h2>Kontakt</h2>
         <div id="contact_div">
             <div class="contact_subdiv">
-                <div class="contact_info"><i class="material-icons">location_on</i><p class="contact_p">Petra Kočića br. 57/2
+                <div class="contact_info"><i class="material-icons">location_on</i><p class="contact_p">Petra Kočića br. 1/2
                     <br>37000 Kruševac<br>Srbija</p></div>
-                <div class="contact_info"><i class="material-icons">local_phone</i><p class="contact_p">+381 37 3461891
-                    <br>+381 63 7116122</p></div>
+                <div class="contact_info"><i class="material-icons">local_phone</i><p class="contact_p">+381 63 7116122
+                    <br>+381 37 3461891</p></div>
                 <div class="contact_info"><i class="material-icons">email</i><p class="contact_p">
-                    <a href="mailto:milan1960miki@aol.com">milan1960miki@aol.com</a></p></div>
+                    <a href="mailto:milan1960miki@aol.com">etikete.semperidem@gmail.com</a></p></div>
             </div>
             <!--The contact form-->
             <div class="contact_subdiv" id="form_div">
