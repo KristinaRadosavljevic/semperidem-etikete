@@ -12,20 +12,10 @@ body {
     background: rgba(204, 122, 0, 0.5);
 }
 
-#cover {
+.cover {
     margin: 0;
     text-align: center;
     height: 45%;
-    background-image: url('images/proizvodnja-etiketa-cover.jpg');
-    background-size: cover;
-    padding: 20px;
-}
-
-#cover_etikete {
-    margin: 0;
-    text-align: center;
-    height: 45%;
-    background-image: url('images/kartonske-etikete-cover.jpg');
     background-size: cover;
     padding: 20px;
 }
@@ -61,6 +51,13 @@ hr {
 
 .letter {
     color: #cc7a00;
+}
+
+#letter-part {
+    width: 50px;
+    margin: 0;
+    z-index: 1;
+    position: absolute;
 }
 
 .proposition {
