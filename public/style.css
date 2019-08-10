@@ -21,7 +21,16 @@ body {
     padding: 20px;
 }
 
-#cover_text {
+#cover_etikete {
+    margin: 0;
+    text-align: center;
+    height: 45%;
+    background-image: url('images/kartonske-etikete-cover.jpg');
+    background-size: cover;
+    padding: 20px;
+}
+
+.cover_text {
     background-color: rgba(255, 255, 255, 0.5);
     margin: 0 auto;
     padding: 5px;
@@ -36,12 +45,12 @@ hr {
     color: black;
 }
 
-h1 {
+.upper_title {
     font-size: 1.7em;
     margin-bottom: 10px;
 }
 
-#brand_name {
+.main_title {
     font-size: 6em;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -54,7 +63,7 @@ h1 {
     color: #cc7a00;
 }
 
-#proposition {
+.proposition {
     font-size: 1.2em;
     font-weight: 100;
 }
@@ -149,7 +158,7 @@ h2 {
     margin: 50px auto;
 }
 
-h2:not(#brand_name)::first-letter {
+h2:not(.upper_title)::first-letter {
     color: #cc7a00;
 }
 
@@ -580,5 +589,11 @@ footer {
     }
     .gallery img:first-child {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cover_text {
+        width: 80%;
     }
 }
