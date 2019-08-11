@@ -37,27 +37,21 @@ hr {
 
 .upper_title {
     font-size: 1.7em;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .main_title {
-    font-size: 6em;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: "Qwigley", "Times New Roman", serif;
-    font-weight: 400;
+    font-size: 4em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Dancing Script", "Times New Roman", serif;
+    font-weight: 100;
     padding: 0;
 }
 
 .letter {
     color: #cc7a00;
-}
-
-#letter-part {
-    width: 50px;
-    margin: 0;
-    z-index: 1;
-    position: absolute;
 }
 
 .proposition {
@@ -142,6 +136,7 @@ section:not(#kontakt) {
     padding: 20px 0;
     margin: 0px auto 20px;
     text-align: center;
+    line-height: 1.5;
     width: 70%;
 }
 
@@ -493,6 +488,30 @@ footer {
     background-color: #cc7a00;
 }
 
+                                /* Product page specific styles */
+
+.product_intro {
+    margin: 50px auto;
+    width: 70%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+.product_intro p:first-child::first-line {
+    line-height: 1;
+}
+
+.product_intro p:first-child::first-letter {
+    font-size: 3em;
+    color: #cc7a00;
+    font-family: "Dancing Script", serif;
+    font-weight: bolder;
+}
+
+                                        /* Media queries */
+
 @media screen and (max-width: 850px) {
     #logo {
         display: none;
@@ -572,6 +591,9 @@ footer {
         margin: 0;
     }
     section {
+        width: 90%;
+    }
+    .product_intro {
         width: 90%;
     }
     .break {
