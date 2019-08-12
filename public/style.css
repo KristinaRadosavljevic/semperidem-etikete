@@ -36,9 +36,10 @@ hr {
 }
 
 .upper_title {
-    font-size: 1.7em;
+    font-size: 1.8em;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-weight: lighter;
 }
 
 .main_title {
@@ -67,6 +68,7 @@ ul {
     list-style-type: none;
     background-color: #333333;
     height: 50px;
+    z-index: 1;
 }
 
 .dropdown {
@@ -510,6 +512,52 @@ footer {
     font-weight: bolder;
 }
 
+#etikete_listings, #cestitke_listings, #tagovi_listings {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listing_div {
+    width: 20%;
+    margin: 20px auto;
+    border: 1px solid #ffebcc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.listing_div:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.listing_title {
+    font-size: 1.1em;
+    margin: 5px auto 0px;
+}
+
+.listing_code {
+    font-size: 0.9em;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.listing_img {
+    width: 100%;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.listing_img:hover {
+    opacity: 0.7;
+}
+
+.listing_description {
+    margin: 0 auto;
+    font-size: 0.9em;
+}
+
                                         /* Media queries */
 
 @media screen and (max-width: 850px) {
@@ -549,6 +597,9 @@ footer {
     .contact_info {
         text-align: center;
         width: 200px;
+    }
+    .listing_div {
+        width: 40%;
     }
 }
 
@@ -608,6 +659,12 @@ footer {
     }
     .gallery img:first-child {
         width: 100%;
+    }
+    .listing_div {
+        width: 100%;
+    }
+    #etikete_listings {
+        width: 70%;
     }
 }
 
