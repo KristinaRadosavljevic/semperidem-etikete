@@ -473,20 +473,29 @@ footer {
     background-color: #333333;
 }
 
-.back_to_top {
-    display: none;
+.back_to_top, .order_button {
     width: max-content;
     margin: 20px auto;
-    padding: 10px;
     border: 0.5px solid #cc7a00;
     border-radius: 5px;
-    background-color: transparent;
     transition: background-color 0.3s;
     text-decoration: none;
     color: black;
 }
 
-.back_to_top:hover {
+.order_button {
+    display: block;
+    padding: 20px;
+    background-color: rgba(204, 122, 0, 0.6);
+}
+
+.back_to_top {
+    display: none;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.back_to_top:hover, .order_button:hover {
     background-color: #cc7a00;
 }
 
