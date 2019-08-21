@@ -20,9 +20,18 @@ var transporter = nodemailer.createTransport({
     }
 });
 
-//Get for home page HTML
+//Get for home and category pages HTML
 app.get('/', function(req, res){
     res.sendFile(path.join(__dirname + '/public/home.html'));
+});
+app.get('/kartonske-etikete', function(req, res){
+    res.sendFile(path.join(__dirname + '/public/kartonske-etikete.html'));
+});
+app.get('/poklon-cestitke', function(req, res){
+    res.sendFile(path.join(__dirname + '/public/poklon-cestitke.html'));
+});
+app.get('/tagovi', function(req, res){
+    res.sendFile(path.join(__dirname + '/public/tagovi.html'));
 });
 
 //Send mail from contact form
