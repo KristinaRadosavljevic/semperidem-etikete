@@ -100,12 +100,15 @@ tagoviI[2].addEventListener("click", function(){openGallery(2, 2, tagoviG)});
 
 // Closing the gallery
 close[0].addEventListener("click", function(){
+    bigPictures[0].src = "";
     galleryDiv[0].style.display = "none";
 });
 close[1].addEventListener("click", function(){
+    bigPictures[1].src = "";
     galleryDiv[1].style.display = "none";
 });
 close[2].addEventListener("click", function(){
+    bigPictures[2].src = "";
     galleryDiv[2].style.display = "none";
 });
 
@@ -177,5 +180,6 @@ function openListingGallery(obj) {
     document.getElementById("gallery_img").src = newSrc;
 };
 function closeListingGallery() {
+    document.getElementById("gallery_img").src = "";
     document.getElementById("gallery_view").style.display = "none";
 };
