@@ -226,6 +226,33 @@ button:focus {
     border-bottom: 20px solid white;
 }
 
+.proizvod ul {
+    margin: 5px;
+    padding: 0;
+    position: static;
+    list-style-type: none;
+    background-color: transparent;
+    height: auto;
+}
+
+.proizvod ul li {
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+
+.proizvod ul li::before {
+    content: "\2022";
+    display: inline-block;
+    font-weight: bold;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.proizvod ul li:hover {
+    background-color: transparent;
+}
+
 .product_page_from_div {
     color: #915700;
 }
@@ -623,6 +650,9 @@ footer {
         position: static;
         display: flex;
         flex-direction: column-reverse;
+    }
+    .proizvod ul {
+        display: inline-block;
     }
     .dropdown {
         display: flex;
