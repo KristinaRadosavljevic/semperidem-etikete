@@ -493,11 +493,30 @@ input::placeholder, textarea::placeholder {
 
 footer {
     margin: 40px 0 0 0;
-    padding: 20px;
+    padding: 0;
     color: #cc7a00;
     font-size: smaller;
     font-weight: lighter;
     background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 20px;
+}
+
+.fa-instagram {
+    color: #cc7a00;
+    padding: 20px 30px;
+    font-size: 2em;
+    transition: color 0.3s;
+}
+
+.fa-instagram:hover {
+    color: white;
 }
 
 .back_to_top, .order_button {
