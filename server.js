@@ -12,8 +12,8 @@ var transporter = nodemailer.createTransport({
     secure: false,
     port: 25,
     auth: {
-        user: 'kristina.valjarevic@gmail.com',
-        pass: '00381653461891'
+        user: 'semperidem.mailer@gmail.com',
+        pass: '32847sj!kdn'
     },
     tls: {
         rejectUnauthorized: false
@@ -40,8 +40,8 @@ app.post('/form-submit', function(req, res){
     var text = '<p><b>Poruka od:</b> ' + req.body.name + '</p><p><b>Email adresa:</b> ' + 
     req.body.email + '</p><p><b>Poruka:</b> ' + req.body.message;
     var mailOptions = {
-        from: 'kristina.valjarevic@gmail.com',
-        to: 'kristina.valjarevic@gmail.com',
+        from: 'semperidem.mailer@gmail.com',
+        to: 'semperidem.mailer@gmail.com',
         subject: 'SAJT KONTAKT ' + req.body.name,
         html: text
     };
