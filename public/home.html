@@ -109,7 +109,7 @@
         <div class="gallery_view">
             <button type="button" class="close">&times;</button>
             <div class="img_container">
-                <img src="images/gallery1.jpg" class="in_gallery">
+                <img src="" class="in_gallery">
             </div>
             <button type="button" class="prev">&#10094;</button>
             <button type="button" class="next">&#10095;</button>
@@ -131,7 +131,7 @@
         <div class="gallery_view">
             <button type="button" class="close">&times;</button>
             <div class="img_container">
-                <img src="images/gallery1.jpg" class="in_gallery">
+                <img src="" class="in_gallery">
             </div>
             <button type="button" class="prev">&#10094;</button>
             <button type="button" class="next">&#10095;</button>
@@ -221,6 +221,12 @@
                     <textarea required placeholder="Ovde nam možete napisati poruku" name="message"
                     oninvalid="this.setCustomValidity('Ovo polje je obavezno.')" 
                     oninput="this.setCustomValidity('')" rows="5" id="message"></textarea><br>
+                    <input type="checkbox" name="agree" id="agree" required oninvalid="this.setCustomValidity('Ovo polje je obavezno.')" 
+                    oninput="this.setCustomValidity('')">
+                    <label for="agree">Slažem se sa <span id="uslovi_text">uslovima korišćenja<div id="uslovi_div">Semper Idem se obavezuje da će se podaci koje pošaljete putem kontakt 
+                            forme koristiti isključivo u cilju ostvarivanja kontakta sa Vama i da ih nećemo 
+                            deliti sa trećim licima niti koristiti za slanje reklamnih mejlova.</div></span> ovog sajta.
+                    </label><br>
                     <input type="submit" id="submit" value="Pošalji"><span id="submit_note">*Sva polja su obavezna.</span>
                 </form>
             </div>

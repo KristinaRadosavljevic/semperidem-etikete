@@ -456,10 +456,44 @@ input::placeholder, textarea::placeholder {
     color: rgba(145, 87, 0, 0.5);
 }
 
+input[type=checkbox] {
+    margin: 10px;
+    margin-left: 0;
+}
+
+label {
+    position: relative;
+}
+
+#uslovi_div {
+    background-color: rgba(255, 255, 255, 0.788);
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 80%;
+    min-width: 150px;
+    padding: 5px;
+    border: 2px solid #915700;
+    border-radius: 10px;
+    display: none;
+    color: black;
+}
+
+#uslovi_text {
+    color: #915700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#uslovi_text:hover #uslovi_div {
+    display: block;
+}
+
 #submit {
     padding: 15px;
     background-color: transparent;
-    margin-top: 5px;
+    margin-top: 15px;
+    cursor: pointer;
     transition: background-color 0.5s;
 }
 
@@ -723,6 +757,12 @@ footer p {
     }
     #etikete_listings {
         width: 70%;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    #uslovi_div {
+        bottom: 50px;
     }
 }
 
