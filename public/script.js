@@ -140,6 +140,7 @@ next[2].addEventListener("click", function(){goToNext(2, tagoviG)});
 
 //Form submit
 document.getElementById("submit").addEventListener("click", function(){
+    if(document.contact_form.checkValidity()){
 fetch('/form-submit', {
     method: 'POST',
     headers: {
@@ -159,7 +160,7 @@ fetch('/form-submit', {
         var failHTML = '<h3 class="contact_heading">Imate pitanje ili želite da poručite?</h3><div id="fail_div">Došlo je do greške. Molimo Vas pokušajte ponovo ili nas kontaktirajte putem mejla ili telefona.</div>';
         document.getElementById("form_div").innerHTML = failHTML;
     }
-});
+});}
 });
 
 //Copyright year update
