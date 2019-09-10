@@ -41,7 +41,7 @@ app.post('/form-submit', function(req, res){
     req.body.email + '</p><p><b>Poruka:</b> ' + req.body.message;
     var mailOptions = {
         from: 'semperidem.mailer@gmail.com',
-        to: 'semperidem.mailer@gmail.com',
+        to: 'etikete.semperidem@gmail.com',
         subject: 'SAJT KONTAKT ' + req.body.name,
         html: text
     };
