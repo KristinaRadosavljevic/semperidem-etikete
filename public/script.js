@@ -172,3 +172,10 @@ var logoNav = document.getElementById("logoNav");
 if(screen.availWidth < 900){
     logoNav.src = "images/semper-idem-logo.png";
 }
+
+//Cover picture lazy load
+var cover = new Image();
+cover.src = "images/proizvodnja-etiketa-cover.jpg";
+cover.addEventListener("load", function(){
+    document.getElementById("cover").style.backgroundImage = "url('images/proizvodnja-etiketa-cover.jpg')";
+});
