@@ -22,6 +22,14 @@
             <p class="proposition"><i class="isti">Uvek isti</i> kvalitet i pouzdanost.</p>
             </div>
         </div>
+        <script>
+            //Cover picture lazy load
+            var cover = new Image();
+            cover.src = "images/proizvodnja-etiketa-cover.jpg";
+            cover.addEventListener("load", function(){
+                document.getElementById("cover").style.backgroundImage = "url('images/proizvodnja-etiketa-cover.jpg')";
+            });
+        </script>
         <!--Top navigation bar-->
         <ul>
             <li id="logo"><a href="#cover" class="nav_a"><img src="images/semper-idem-logo-nav.png" style="height:50px;" id="logoNav"></a></li>

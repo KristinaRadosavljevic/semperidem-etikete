@@ -1,9 +1,4 @@
-//Cover picture lazy load
-var cover = new Image();
-cover.src = "images/proizvodnja-etiketa-cover.jpg";
-cover.addEventListener("load", function(){
-    document.getElementById("cover").style.backgroundImage = "url('images/proizvodnja-etiketa-cover.jpg')";
-});
+
 
 // Displaying the divs
 var etiketeB = document.getElementById("etikete");
