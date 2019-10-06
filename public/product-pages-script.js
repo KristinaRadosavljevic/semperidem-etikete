@@ -18,7 +18,7 @@ function lazyLoad() {
             window.removeEventListener("resize", lazyLoad);
             window.removeEventListener("orientationChange", lazyLoad);
         }
-    }, 20);
+    }, 10);
 }
 document.addEventListener("scroll", lazyLoad);
 window.addEventListener("resize", lazyLoad);
