@@ -172,15 +172,3 @@ var logoNav = document.getElementById("logoNav");
 if(screen.availWidth < 900){
     logoNav.src = "images/semper-idem-logo.png";
 }
-
-//Product listing gallery function
-function openListingGallery(obj) {
-    var imgSrc = obj.src;
-    var newSrc = imgSrc.replace("thumbnail", "gallery");
-    document.getElementById("gallery_view").style.display = "block";
-    document.getElementById("gallery_img").src = newSrc;
-};
-function closeListingGallery() {
-    document.getElementById("gallery_img").src = "";
-    document.getElementById("gallery_view").style.display = "none";
-};
