@@ -1,5 +1,3 @@
-
-
 // Displaying the divs
 var etiketeB = document.getElementById("etikete");
 var cestitkeB = document.getElementById("cestitke");
