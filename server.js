@@ -1,5 +1,7 @@
 var express = require('express');
 var app = express();
+var dotenv = require('dotenv');
+dotenv.config();
 var path = require('path');
 var nodemailer = require('nodemailer');
 app.use(express.json());
@@ -13,7 +15,7 @@ var transporter = nodemailer.createTransport({
     port: 25,
     auth: {
         user: 'semperidem.mailer@gmail.com',
-        pass: '32847sj!kdn'
+        pass: process.env.PASSWORD
     },
     tls: {
         rejectUnauthorized: false
